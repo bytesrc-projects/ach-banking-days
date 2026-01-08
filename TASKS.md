@@ -76,21 +76,21 @@ A task-oriented plan for delivering `v0.1 → v0.2 → v1.0 → v2`, including t
 ## v0.1 — Core engine + US FedACH + basic math
 
 ### 0.1.1 — Initialize project scaffolding
-- [ ] Create repo and initialize npm package under scope: `@bytesrc/ach-banking-days`
-- [ ] Add MIT `LICENSE`
+- [x] Create repo and initialize npm package under scope: `@bytesrc/ach-banking-days`
+- [x] Add MIT `LICENSE`
 - [ ] Add `.editorconfig` (optional) and formatting config (`prettier`) (optional)
-- [ ] Configure TypeScript strict mode (`tsconfig.json`)
-- [ ] Install deps:
-  - [ ] `tsup`
-  - [ ] `typescript`
-  - [ ] `vitest`
-- [ ] Add npm scripts:
-  - [ ] `build`, `typecheck`, `test`, `lint` (optional)
-- [ ] Add `package.json` exports for dual ESM/CJS + types
+- [x] Configure TypeScript strict mode (`tsconfig.json`)
+- [x] Install deps:
+  - [x] `tsup`
+  - [x] `typescript`
+  - [x] `vitest`
+- [x] Add npm scripts:
+  - [x] `build`, `typecheck`, `test`, `lint` (optional)
+- [x] Add `package.json` exports for dual ESM/CJS + types
 
 **Acceptance**
-- `npm run build` produces `dist/` with ESM, CJS, and `.d.ts`
-- `npm test` passes locally
+- [x] `npm run build` produces `dist/` with ESM, CJS, and `.d.ts`
+- [x] `npm test` passes locally
 
 ---
 
