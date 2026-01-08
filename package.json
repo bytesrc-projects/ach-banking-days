@@ -4,6 +4,8 @@
   "description": "Calculate U.S. ACH banking days (FedACH closures) with date-only LocalDate.",
   "license": "MIT",
   "type": "module",
+  "author": "Zaquariah Holland",
+  "organization": "bytesrc",
   "files": [
     "dist"
   ],
