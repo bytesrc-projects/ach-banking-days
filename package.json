@@ -19,10 +19,14 @@
   },
   "scripts": {
     "build": "tsup src/index.ts --format esm,cjs --dts --clean",
+    "changeset": "changeset",
+    "release": "changeset publish",
     "typecheck": "tsc -p tsconfig.json",
-    "test": "vitest run"
+    "test": "vitest run",
+    "version": "changeset version"
   },
   "devDependencies": {
+    "@changesets/cli": "^2.29.8",
     "@types/node": "^22.19.3",
     "tsup": "^8.5.1",
     "typescript": "^5.9.3",

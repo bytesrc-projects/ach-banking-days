@@ -10,11 +10,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - uses: actions/setup-node@v4
         with:
           node-version: "20"
           cache: "npm"
       - run: npm ci
+      - if: ${{ github.event_name == 'pull_request' && !contains(github.event.pull_request.labels.*.name, 'docs-only') }}
+        run: npx changeset status --since=origin/main
       - run: npm run typecheck
       - run: npm test
       - run: npm run build
