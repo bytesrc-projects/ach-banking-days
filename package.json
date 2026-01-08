@@ -1,0 +1,37 @@
+{
+  "name": "@bytesrc/ach-banking-days",
+  "version": "0.0.0",
+  "description": "Calculate U.S. ACH banking days (FedACH closures) with date-only LocalDate.",
+  "license": "MIT",
+  "type": "module",
+  "author": "Zaquariah Holland",
+  "organization": "bytesrc",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "scripts": {
+    "build": "tsup src/index.ts --format esm,cjs --dts --clean",
+    "changeset": "changeset",
+    "release": "changeset publish",
+    "typecheck": "tsc -p tsconfig.json",
+    "test": "vitest run",
+    "version": "changeset version"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.29.8",
+    "@types/node": "^22.19.3",
+    "tsup": "^8.5.1",
+    "typescript": "^5.9.3",
+    "vitest": "^2.1.9"
+  }
+}
