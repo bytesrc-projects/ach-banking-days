@@ -1,6 +1,6 @@
 {
   "name": "@bytesrc/ach-banking-days",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Calculate U.S. ACH banking days (FedACH closures) with date-only LocalDate.",
   "license": "MIT",
   "type": "module",
